@@ -25,15 +25,6 @@ class Scraper
     end
   end
 
-  #  doc.css(".post").each do |post|
-  #    course = Course.new
-  #    course.title = post.css("h2").text
-  #    course.schedule = post.css(".date").text
-  #    course.description = post.css("p").text
-  #  end
-  #end
-
-
    def print_courses
    self.make_courses
    Course.all.each do |course|
